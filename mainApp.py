@@ -14,7 +14,7 @@ import squarify  # for treemap
 # Download resources
 nltk.download("punkt")
 nltk.download("wordnet")
-
+nltk.download("punkt_tab")   # <-- add this
 # ----------------------
 # Utility Functions
 # ----------------------
@@ -188,3 +188,4 @@ if uploaded_file:
                     st.pyplot(fig_barh)
                 else:
                     st.warning(f"No data available for {col}.")
+
