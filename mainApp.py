@@ -9,7 +9,7 @@ from sklearn.decomposition import LatentDirichletAllocation
 import re
 import nltk
 from nltk.stem import PorterStemmer, ISRIStemmer
-import squarify  # for treemap
+import squarify  , os# for treemap
 
 # Download resources
 nltk.download("punkt")
@@ -188,5 +188,6 @@ if uploaded_file:
                     st.pyplot(fig_barh)
                 else:
                     st.warning(f"No data available for {col}.")
+
 
 
