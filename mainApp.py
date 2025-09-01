@@ -56,7 +56,7 @@ def generate_wordcloud(text, title="Word Cloud"):
     wordcloud = WordCloud(
         width=800, height=400,
         background_color="white",
-        font_path="arial.ttf"  # use Arabic-compatible font if needed
+        font_path = os.path.join(os.path.dirname(__file__), "ARIAL.TTF")
     ).generate(text)
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.imshow(wordcloud, interpolation="bilinear")
@@ -188,4 +188,5 @@ if uploaded_file:
                     st.pyplot(fig_barh)
                 else:
                     st.warning(f"No data available for {col}.")
+
 
