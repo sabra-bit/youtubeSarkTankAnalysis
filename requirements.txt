@@ -1,0 +1,10 @@
+streamlit
+pandas
+matplotlib
+wordcloud
+arabic-reshaper
+python-bidi
+scikit-learn
+nltk
+squarify
+openpyxl
